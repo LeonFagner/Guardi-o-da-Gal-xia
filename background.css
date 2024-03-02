@@ -1,0 +1,28 @@
+.background {
+    position: relative;
+    z-index:-1 ;
+
+}
+.background::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--image-shadow);
+    z-index: 1;
+}
+
+#images {
+    transition: all 0.8s;
+    position: absolute;
+}
+
+#images img {
+    display: block;
+    width: 110%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+
+}
